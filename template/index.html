@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>House price predictor</title>
+</head>
+<body>
+
+<form action="{{url_for('main')}}" method="POST">
+    <fieldset>
+        <p>
+            <label for="LotFrontage"><span>Linear feet of street connected to property</span>
+                <input type="number" id="LotFrontage" name="LotFrontage"><br>
+            </label>
+        </p>
+        <p>
+            <label for="MasVnrArea"><span>Masonry veneer area in square feet</span>
+                <input type="number" id="MasVnrArea" name="MasVnrArea"><br>
+            </label>
+        </p>
+        <p>
+            <label for="TotalBsmtSF"><span>Total square feet of basement area</span>
+                <input type="number" id="TotalBsmtSF" name="TotalBsmtSF"><br>
+            </label>
+        </p>
+        <p>
+            <label for="firstFlrSF"><span>First Floor square feet</span>
+                <input type="number" id="firstFlrSF" name="firstFlrSF"><br>
+            </label>
+        </p>
+        <p>
+            <label for="GrLivArea"><span>Above grade (ground) living area square feet</span>
+                <input type="number" id="GrLivArea" name="GrLivArea"><br>
+            </label>
+        </p>
+        <p>
+            <label for="FullBath"><span>Full bathrooms above grade</span>
+                <input type="number" id="FullBath" name="FullBath"><br>
+            </label>
+        </p>
+        <p>
+            <label for="TotRmsAbvGrd"><span>Total rooms above grade (does not include bathrooms)</span>
+                <input type="number" id="TotRmsAbvGrd" name="TotRmsAbvGrd"><br>
+            </label>
+        </p>
+        <p>
+            <label for="Fireplaces"><span>Number of fireplaces</span>
+                <input type="number" id="Fireplaces" name="Fireplaces"><br>
+            </label>
+        </p>
+        <p>
+            <label for="GarageCars"><span>Size of garage in car capacity</span>
+                <input type="number" id="GarageCars" name="GarageCars"><br>
+            </label>
+        </p>
+        <p>
+            <label for="GarageArea"><span>Size of garage in square feet</span>
+                <input type="number" id="GarageArea" name="GarageArea"><br>
+            </label>
+        </p>
+        <p>
+            <label for="MasVnrType"><span>Masonry veneer type</span>
+                <select id="MasVnrType" name="MasVnrType">
+                    <option value="0.5917808219178082">None</option>
+                    <option value="0.3047945205479452">Brick Face</option>
+                    <option value="0.08767123287671233">Stone</option>
+                    <option value="0.010273972602739725">Brick Common</option>
+                </select><br>
+            </label>
+        </p>
+        <label for="OverallQual"><span>Rates the overall material and finish of the house</span>
+            <ul id="OverallQual">
+                <li><label>
+                    <input type="radio" name="OverallQual" value="0">
+                </label>0
+                </li>
+                <li><label>
+                    <input type="radio" name="OverallQual" value="1">
+                </label>1
+                </li>
+                <li><label>
+                    <input type="radio" name="OverallQual" value="2">
+                </label>2
+                </li>
+                <li><label>
+                    <input type="radio" name="OverallQual" value="3">
+                </label>3
+                </li>
+                <li><label>
+                    <input type="radio" name="OverallQual" value="4">
+                </label>4
+                </li>
+                <li><label>
+                    <input type="radio" name="OverallQual" value="5">
+                </label>5
+                </li>
+                <li><label>
+                    <input type="radio" name="OverallQual" value="6">
+                </label>6
+                </li>
+                <li><label>
+                    <input type="radio" name="OverallQual" value="7">
+                </label>7
+                </li>
+                <li><label>
+                    <input type="radio" name="OverallQual" value="8">
+                </label>8
+                </li>
+                <li><label>
+                    <input type="radio" name="OverallQual" value="9">
+                </label>9
+                </li>
+            </ul>
+        </label>
+
+        <label for="ExterQual"><span>Evaluates the quality of the material on the exterior</span>
+            <ul id="ExterQual">
+                <li><label>
+                    <input type="radio" name="ExterQual" value="0">
+                </label>Poor
+                </li>
+                <li><label>
+                    <input type="radio" name="ExterQual" value="1">
+                </label>Fair
+                </li>
+                <li><label>
+                    <input type="radio" name="ExterQual" value="3">
+                </label>Average/Typical
+                </li>
+                <li><label>
+                    <input type="radio" name="ExterQual" value="2">
+                </label>Good
+                </li>
+                <li><label>
+                    <input type="radio" name="ExterQual" value="4">
+                </label>Excellent
+                </li>
+            </ul>
+        </label>
+
+
+        <label for="BsmtQual"><span>Evaluates the height of the basement</span>
+            <ul id="BsmtQual">
+                <li><label>
+                    <input type="radio" name="BsmtQual" value="0">
+                </label>Poor
+                </li>
+                <li><label>
+                    <input type="radio" name="BsmtQual" value="1">
+                </label>Fair
+                </li>
+                <li><label>
+                    <input type="radio" name="BsmtQual" value="2">
+                </label>Average/Typical
+                </li>
+                <li><label>
+                    <input type="radio" name="BsmtQual" value="3">
+                </label>Good
+                </li>
+                <li><label>
+                    <input type="radio" name="BsmtQual" value="4">
+                </label>Excellent
+                </li>
+            </ul>
+        </label>
+
+        <label for="HeatingQC"><span>Heating quality and condition</span>
+            <ul id="HeatingQC">
+                <li><label>
+                    <input type="radio" name="HeatingQC" value="0">
+                </label>Poor
+                </li>
+                <li><label>
+                    <input type="radio" name="HeatingQC" value="1">
+                </label>Fair
+                </li>
+                <li><label>
+                    <input type="radio" name="HeatingQC" value="2">
+                </label>Average/Typical
+                </li>
+                <li><label>
+                    <input type="radio" name="HeatingQC" value="3">
+                </label>Good
+                </li>
+                <li><label>
+                    <input type="radio" name="HeatingQC" value="4">
+                </label>Excellent
+                </li>
+            </ul>
+        </label>
+
+        <label for="KitchenQual"><span>Kitchen quality</span>
+            <ul id="KitchenQual">
+                <li><label>
+                    <input type="radio" name="KitchenQual" value="0">
+                </label>Poor
+                </li>
+                <li><label>
+                    <input type="radio" name="KitchenQual" value="1">
+                </label>Fair
+                </li>
+                <li><label>
+                    <input type="radio" name="KitchenQual" value="2">
+                </label>Average/Typical
+                </li>
+                <li><label>
+                    <input type="radio" name="KitchenQual" value="3">
+                </label>Good
+                </li>
+                <li><label>
+                    <input type="radio" name="KitchenQual" value="4">
+                </label>Excellent
+                </li>
+            </ul>
+        </label>
+
+        <label for="FireplaceQu"><span>Fireplace quality</span>
+            <ul id="FireplaceQu">
+                <li><label>
+                    <input type="radio" name="FireplaceQu" value="0">
+                </label>Poor
+                </li>
+                <li><label>
+                    <input type="radio" name="FireplaceQu" value="2">
+                </label>Fair
+                </li>
+                <li><label>
+                    <input type="radio" name="FireplaceQu" value="3">
+                </label>Average/Typical
+                </li>
+                <li><label>
+                    <input type="radio" name="FireplaceQu" value="4">
+                </label>Good
+                </li>
+                <li><label>
+                    <input type="radio" name="FireplaceQu" value="5">
+                </label>Excellent
+                </li>
+            </ul>
+        </label>
+
+        <p>
+            <label for="YearBuilt"><span>Original construction date</span>
+                <input type="number" id="YearBuilt" name="YearBuilt"><br>
+            </label>
+        </p>
+        <p>
+            <label for="YearRemodAdd"><span>Remodel date (same as construction date if no remodeling or additions)</span>
+                <input type="number" id="YearRemodAdd" name="YearRemodAdd"><br>
+            </label>
+        </p>
+        <p>
+            <label for="GarageYrBlt"><span>Year garage was built</span>
+                <input type="number" id="GarageYrBlt" name="GarageYrBlt"><br>
+            </label>
+        </p>
+        <p>
+            <label for="Age"><span>How old the Property (years)</span>
+                <input type="number" id="Age" name="Age"><br>
+            </label>
+        </p>
+
+        <input type="submit" value="Check">
+    </fieldset>
+</form>
+
+<div class="result" align="center">
+    <p>{{inputs}}</p>
+    <p>{{result}}</p>
+</div>
+
+</body>
+</html>
