@@ -26,7 +26,7 @@ def main():
         inputs = np.power(inputs, 1 / 5)
         result = np.power(model.predict(inputs), 5)
 
-        return flask.render_template('index.html', result=result, )
+        return flask.render_template('index.html', result=result[0], )
 
 
 if __name__ == '__main__':
