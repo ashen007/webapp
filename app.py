@@ -4,8 +4,8 @@ import pickle
 import joblib
 import flask
 
-with open(f'model/linear_dg.gz', 'rb') as file:
-    model = joblib.load(file)
+with open(f'model/sk_linear_model.pkl', 'rb') as file:
+    model = pickle.load(file)
 
 app = flask.Flask(__name__, template_folder='template')
 
