@@ -1,14 +1,15 @@
 import numpy as np
 import pandas as pd
 import pickle
-import joblib
 import flask
 import plotly.graph_objs as go
+from dashboards import init_dashboard
 
 with open(f'model/sk_linear_model.pkl', 'rb') as file:
     model = pickle.load(file)
 
 app = flask.Flask(__name__, template_folder='template')
+init_dashboard(app)
 
 data = pd.read_pickle('data/cleaned.pkl')
 data['Age'] = data['YrSold'] - data['YearBuilt']
@@ -81,6 +82,7 @@ def create_bubble():
 
     return fig.to_json()
 
+
 fig_json = create_bubble()
 
 
@@ -99,11 +101,11 @@ def main():
         inputs = inputs.astype(float)
         inputs = np.power(inputs, 1 / 5)
         result = np.power(model.predict(inputs), 5)
-        
+
         if result[0] < 0:
             result = 0
         else:
-            result = round(result[0],2)
+            result = round(result[0], 2)
 
         return flask.render_template('index.html', result=result, bubble_plot=fig_json)
 
