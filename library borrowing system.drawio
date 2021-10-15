@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-10-15T09:51:28.279Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.9 Safari/537.36" etag="1TFy1yOTBlZIDftl7NRs" version="15.5.2" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-10-15T10:08:23.490Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.9 Safari/537.36" etag="T-BQn4B_ynATohMubJDi" version="15.5.2" type="github" pages="2">
   <diagram id="prtHgNgQTEPvFCAcTncT" name="library book barrow">
     <mxGraphModel dx="2031" dy="1089" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -87,10 +87,13 @@
     </mxGraphModel>
   </diagram>
   <diagram id="295ewP2aM1Tux-ZiSIFp" name="buying glasses">
-    <mxGraphModel dx="2031" dy="1024" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1138" dy="570" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="g7bd4FB1pQx1--MT-t91-0" />
         <mxCell id="g7bd4FB1pQx1--MT-t91-1" parent="g7bd4FB1pQx1--MT-t91-0" />
+        <mxCell id="g7bd4FB1pQx1--MT-t91-7" value="buying glasses" style="shape=umlFrame;whiteSpace=wrap;html=1;width=120;height=30;boundedLbl=1;verticalAlign=middle;align=left;spacingLeft=5;rounded=1;fillColor=none;" vertex="1" parent="g7bd4FB1pQx1--MT-t91-1">
+          <mxGeometry x="160" y="80" width="480" height="960" as="geometry" />
+        </mxCell>
         <mxCell id="g7bd4FB1pQx1--MT-t91-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="g7bd4FB1pQx1--MT-t91-1" source="g7bd4FB1pQx1--MT-t91-2" target="g7bd4FB1pQx1--MT-t91-8">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -101,9 +104,6 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="g7bd4FB1pQx1--MT-t91-22" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="g7bd4FB1pQx1--MT-t91-1" source="g7bd4FB1pQx1--MT-t91-2" target="g7bd4FB1pQx1--MT-t91-12">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="g7bd4FB1pQx1--MT-t91-23" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="g7bd4FB1pQx1--MT-t91-1" source="g7bd4FB1pQx1--MT-t91-2" target="g7bd4FB1pQx1--MT-t91-13">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="g7bd4FB1pQx1--MT-t91-24" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="g7bd4FB1pQx1--MT-t91-1" source="g7bd4FB1pQx1--MT-t91-2" target="g7bd4FB1pQx1--MT-t91-14">
@@ -127,11 +127,16 @@
         <mxCell id="g7bd4FB1pQx1--MT-t91-28" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="g7bd4FB1pQx1--MT-t91-1" source="g7bd4FB1pQx1--MT-t91-6" target="g7bd4FB1pQx1--MT-t91-18">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="g7bd4FB1pQx1--MT-t91-29" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=open;endFill=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;dashed=1;startArrow=none;startFill=0;" edge="1" parent="g7bd4FB1pQx1--MT-t91-1" source="g7bd4FB1pQx1--MT-t91-18" target="g7bd4FB1pQx1--MT-t91-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g7bd4FB1pQx1--MT-t91-30" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="g7bd4FB1pQx1--MT-t91-29">
+          <mxGeometry x="-0.0917" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="g7bd4FB1pQx1--MT-t91-6" value="optical dispensary" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;rounded=1;fillColor=none;" vertex="1" parent="g7bd4FB1pQx1--MT-t91-1">
           <mxGeometry x="710" y="920" width="30" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="g7bd4FB1pQx1--MT-t91-7" value="buying glasses" style="shape=umlFrame;whiteSpace=wrap;html=1;width=120;height=30;boundedLbl=1;verticalAlign=middle;align=left;spacingLeft=5;rounded=1;fillColor=none;" vertex="1" parent="g7bd4FB1pQx1--MT-t91-1">
-          <mxGeometry x="160" y="80" width="480" height="960" as="geometry" />
         </mxCell>
         <mxCell id="g7bd4FB1pQx1--MT-t91-8" value="meet a eye doctor" style="ellipse;whiteSpace=wrap;html=1;rounded=1;fillColor=none;" vertex="1" parent="g7bd4FB1pQx1--MT-t91-1">
           <mxGeometry x="325" y="350" width="150" height="60" as="geometry" />
@@ -145,11 +150,8 @@
         <mxCell id="g7bd4FB1pQx1--MT-t91-12" value="choose frame" style="ellipse;whiteSpace=wrap;html=1;rounded=1;fillColor=none;" vertex="1" parent="g7bd4FB1pQx1--MT-t91-1">
           <mxGeometry x="325" y="565" width="150" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="g7bd4FB1pQx1--MT-t91-13" value="choose frame" style="ellipse;whiteSpace=wrap;html=1;rounded=1;fillColor=none;" vertex="1" parent="g7bd4FB1pQx1--MT-t91-1">
-          <mxGeometry x="325" y="640" width="150" height="60" as="geometry" />
-        </mxCell>
         <mxCell id="g7bd4FB1pQx1--MT-t91-14" value="place a order" style="ellipse;whiteSpace=wrap;html=1;rounded=1;fillColor=none;" vertex="1" parent="g7bd4FB1pQx1--MT-t91-1">
-          <mxGeometry x="325" y="720" width="150" height="60" as="geometry" />
+          <mxGeometry x="320" y="650" width="150" height="60" as="geometry" />
         </mxCell>
         <mxCell id="g7bd4FB1pQx1--MT-t91-15" value="meet patient" style="ellipse;whiteSpace=wrap;html=1;rounded=1;fillColor=none;" vertex="1" parent="g7bd4FB1pQx1--MT-t91-1">
           <mxGeometry x="320" y="120" width="150" height="60" as="geometry" />
@@ -158,10 +160,10 @@
           <mxGeometry x="320" y="200" width="150" height="60" as="geometry" />
         </mxCell>
         <mxCell id="g7bd4FB1pQx1--MT-t91-17" value="get glasses" style="ellipse;whiteSpace=wrap;html=1;rounded=1;fillColor=none;" vertex="1" parent="g7bd4FB1pQx1--MT-t91-1">
-          <mxGeometry x="325" y="800" width="150" height="60" as="geometry" />
+          <mxGeometry x="325" y="740" width="150" height="60" as="geometry" />
         </mxCell>
         <mxCell id="g7bd4FB1pQx1--MT-t91-18" value="create glasses" style="ellipse;whiteSpace=wrap;html=1;rounded=1;fillColor=none;" vertex="1" parent="g7bd4FB1pQx1--MT-t91-1">
-          <mxGeometry x="325" y="920" width="150" height="60" as="geometry" />
+          <mxGeometry x="470" y="920" width="150" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
